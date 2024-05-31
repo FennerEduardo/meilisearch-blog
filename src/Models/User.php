@@ -15,7 +15,7 @@ class User extends Model
     public function __construct()
     {
         $this->db = Database::getInstance()->getConnection();
-        $this->meiliSearch = new Client('http://localhost:7700', 'dEFUtLYFq56xCWALmRgh1izkjjPcSBN3pkppMOunV6I');
+        $this->meiliSearch = new Client('http://localhost:7700', 'KHKwqv-3awFLRvtjHUSexQDDG9sZFIUiQInYkTPonCY');
         $this->indexName = 'users';
     }
 

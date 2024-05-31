@@ -38,9 +38,9 @@ class DatabaseSeeder
                 $userId = rand(1, 3); 
 
                 $this->db->exec("
-        INSERT INTO blogs (title, content, user_id) VALUES
-        ('$title', '$content', $userId);
-    ");
+                    INSERT INTO blogs (title, content, user_id) VALUES
+                    ('$title', '$content', $userId);
+                ");
             }
 
             // Insert comments
@@ -50,9 +50,9 @@ class DatabaseSeeder
                 $blogId = rand(1, 50); 
 
                 $this->db->exec("
-        INSERT INTO comments (content, user_id, blog_id) VALUES
-        ('$content', $userId, $blogId);
-    ");
+                    INSERT INTO comments (content, user_id, blog_id) VALUES
+                    ('$content', $userId, $blogId);
+                ");
             }
 
 

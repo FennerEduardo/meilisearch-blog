@@ -10,7 +10,7 @@ class GlobalSearch
 
     public function __construct()
     {
-        $this->meiliSearch = new Client('http://localhost:7700', 'dEFUtLYFq56xCWALmRgh1izkjjPcSBN3pkppMOunV6I');
+        $this->meiliSearch = new Client('http://localhost:7700', 'KHKwqv-3awFLRvtjHUSexQDDG9sZFIUiQInYkTPonCY');
     }
 
     public function searchByIndexAndPrimaryKey($indexName, $primaryKey)
@@ -31,7 +31,7 @@ class GlobalSearch
 
         $this->meiliSearch->index($indexName)->updateSettings([
             'pagination' => [
-                'maxTotalHits' => 100000
+                'maxTotalHits' => 500
             ]
         ]);
         $settings = $this->meiliSearch->index($indexName)->getSettings();

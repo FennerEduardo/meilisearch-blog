@@ -12,7 +12,7 @@ class BlogController
     public function __construct()
     {
         $this->blogModel = new Blog();
-        $this->blogModel->indexBlogs();
+        // $this->blogModel->indexBlogs();
     }
 
     public function index()

@@ -11,7 +11,7 @@ class Router
         $this->routes[$url] = $controllerMethod;
     }
 
-    public function route($url, $method)
+    public function route($url)
     {
         $parsedUrl = parse_url($url);
         $path = $parsedUrl['path'];
